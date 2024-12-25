@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Performance Training</title>
+    <link rel="stylesheet" href="../../resources/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../resources/img/icon.ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./resources/styles.css">
+</head>
+
+<body>
+    <header> <!--Cabeçalho comum a todas as páginas-->
+        <div id="logoName">
+            <a href="../../index.html">
+            <img src="../../resources/img/logo.png" alt="David Performance Training Logo">
+        </a>
+        <h1><a class="title" id="name" href="../../index.html">David Performance Training</a></h1>
+    </div>
+        <nav>
+            <ul> <!--Barra de navegação-->
+                <li><a href="../about/index.html">Sobre Mim</a></li>
+                <li><a href="../services/index.html">Serviços</a></li>
+                <li><a href="../testimonials/index.html">Testemunhos</a></li>
+                <li><a href="../contact/index.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="contact-form">
+        <h2>Entre em contacto comigo!</h2>
+        <form action="" onsubmit="alert('Formulário enviado!'); return false;">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
+
+            <div class="phone-input">
+                <label for="phone">Contacto Telefónico</label>
+                <select id="country-code" name="country-code" required>
+                    <option value="+351">🇵🇹 +351 (Portugal)</option>
+                    <option value="+55">🇧🇷 +55 (Brasil)</option>
+                    <option value="+1">🇺🇸 +1 (Estados Unidos)</option>
+                    <option value="+44">🇬🇧 +44 (Reino Unido)</option>
+                    <option value="+33">🇫🇷 +33 (França)</option>
+                    <option value="+34">🇪🇸 +34 (Espanha)</option>
+                    <option value="+39">🇮🇹 +39 (Itália)</option>
+                    <option value="+49">🇩🇪 +49 (Alemanha)</option>
+                    <option value="+1">🇨🇦 +1 (Canadá)</option>
+                    <option value="+61">🇦🇺 +61 (Austrália)</option>
+                    <option value="+81">🇯🇵 +81 (Japão)</option>
+                    <option value="+86">🇨🇳 +86 (China)</option>
+                    <option value="+91">🇮🇳 +91 (Índia)</option>
+                    <option value="+7">🇷🇺 +7 (Rússia)</option>
+                    <option value="+27">🇿🇦 +27 (África do Sul)</option>
+                </select>
+                <input type="tel" id="phone" name="phone" placeholder="Digite o seu contacto" required>
+              </div>
+              
+              <label for="message">Mensagem</label>
+              <textarea name="message" id="message" placeholder="Escreva a sua mensagem" rows="5" required></textarea>
+              
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+</main>
+</body>
+
+</html>

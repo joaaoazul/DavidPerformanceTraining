@@ -1,0 +1,95 @@
+/* Caixa do formulário */
+main{
+    padding-top: 70px;
+}
+
+.contact-form {
+    margin-top: 50px;
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px 50px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 40px auto; /* Centraliza o formulário */
+
+}
+
+/* Título do formulário */
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo dos rótulos */
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo dos campos de entrada */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilo do seletor de indicativos de país */
+.phone-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.phone-input select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    appearance: none;
+}
+
+.phone-input select:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo do botão */
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .phone-input {
+        flex-direction: column;
+    }
+}

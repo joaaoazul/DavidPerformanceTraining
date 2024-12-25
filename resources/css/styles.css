@@ -1,4 +1,4 @@
-/* General Styles */
+/* Estilos gerais */
 body {
     font-family: Outfit, sans-serif;
     font-weight: 600;
@@ -12,9 +12,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-y: hidden;
 }
 
-/* Variables */
+/* Variáveis de cor */
 :root {
     --first-color: #ececec;
     --second-color: #9fd3c7;
@@ -22,7 +23,7 @@ body {
     --fourth-color: #142d4c;
 }
 
-/* Header */
+/* Cabeçalho */
 header {
     background: var(--fourth-color);
     color: var(--first-color);
@@ -55,7 +56,7 @@ header h1 a:hover {
     color: var(--first-color);
 }
 
-/* Logo */
+/* Logotipo */
 header a img {
     display: block;
     max-height: 50px;
@@ -72,7 +73,7 @@ header a img {
 
 }
 
-/* Navigation Bar */
+/* Barra de navegação */
 nav {
     display: flex;
     align-items: center;
@@ -105,7 +106,7 @@ nav ul li a:hover {
     color: var(--fourth-color);
 }
 
-/* Button and Journey Section */
+/* Botão */
 .begginJourney {
     position: absolute;
     top: 50%;
@@ -133,7 +134,7 @@ nav ul li a:hover {
     color: var(--first-color);
 }
 
-/* Responsive Adjustments */
+/* Ajustes de responsividade */
 @media (max-width: 768px) {
     header {
         text-align: center;
