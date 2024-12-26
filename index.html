@@ -20,6 +20,7 @@
         </a>
         <h1><a class="title" id="name" href="index.html">David Performance Training</a></h1>
     </div>
+    <div class="menu-toggle">☰</div>
         <nav>
             <ul> <!--Barra de navegação-->
                 <li><a href="./pages/about/index.html">Sobre Mim</a></li>
@@ -43,4 +44,23 @@
             <p>&copy; 2024 David Performance Training. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const dropdownMenu = document.querySelector('nav ul');
+        
+        // Abrir/Fechar menu ao clicar no botão
+        menuToggle.addEventListener('click', function (e) {
+          e.stopPropagation(); // Impede que o clique no botão feche o menu
+          dropdownMenu.classList.toggle('show');
+        });
+        
+        // Fechar menu ao clicar fora
+        document.addEventListener('click', function (e) {
+          if (!dropdownMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            dropdownMenu.classList.remove('show'); // Esconde o menu
+          }
+        });
+        
+          </script>
 </html>
