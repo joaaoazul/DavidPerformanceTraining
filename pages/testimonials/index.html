@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="../../resources/img/icon.ico.ico" type="image/x-icon">
+<link rel="stylesheet" href="./resources/styles.css">
 </head>
+<main>
 <body>
     <header> <!--Cabeçalho comum a todas as páginas-->
         <div id="logoName">
@@ -18,6 +20,7 @@
         </a>
         <h1><a class="title" id="name" href="../../index.html">David Performance Training</a></h1>
     </div>
+    <div class="menu-toggle">☰</div>
         <nav>
             <ul> <!--Barra de navegação-->
                 <li><a href="../about/index.html">Sobre Mim</a></li>
@@ -29,4 +32,29 @@
 
     </header>
 </body>
+</main>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 David Performance Training. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const dropdownMenu = document.querySelector('nav ul');
+    
+    // Abrir/Fechar menu ao clicar no botão
+    menuToggle.addEventListener('click', function (e) {
+      e.stopPropagation(); // Impede que o clique no botão feche o menu
+      dropdownMenu.classList.toggle('show');
+    });
+    
+    // Fechar menu ao clicar fora
+    document.addEventListener('click', function (e) {
+      if (!dropdownMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        dropdownMenu.classList.remove('show'); // Esconde o menu
+      }
+    });
+    
+      </script>
 </html>
