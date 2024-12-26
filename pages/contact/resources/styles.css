@@ -1,7 +1,5 @@
 /* Caixa do formulário */
-main{
-    padding-top: 70px;
-}
+
 
 :root {
     --first-color: #ececec;
@@ -131,6 +129,16 @@ main{
       nav {
         display: none; /* Esconde a barra de navegação por padrão */
       }
+
+      
+    nav ul.show {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--third-color);
+      border-radius: 5px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+    
 
   }
   
