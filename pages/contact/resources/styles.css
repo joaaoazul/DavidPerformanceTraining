@@ -167,7 +167,7 @@ main{
 
 .contact-form button:hover {
     background-color: #0056b3;
-}
+} 
 
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
@@ -296,5 +296,7 @@ nav ul{
     }
       
       }
+
+
   
   
