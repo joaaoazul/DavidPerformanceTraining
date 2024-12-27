@@ -207,59 +207,66 @@ footer .footer-content {
   @media (max-width: 480px) {
     header h1 {
       font-size: 16px !important;
-    margin: 0;
+  margin-right: 15px;
     }
-
-
-header {
+  
+  
+  header {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between; /* Espaça os elementos */
     padding: 10px 15px;
     box-sizing: border-box;
   }
-
+  
+  
   #logoName {
     display: flex !important;
     align-items: center !important;
-    gap: 8px;
+    gap: 10px;
     flex-grow: 1;
     justify-content: flex-start;
   }
-
-#logoName img {
+  
+  #logoName img {
     max-height: 30px; /* Reduz o tamanho do logo */
     height: auto;
     width: auto;
   }
   
-nav {
+  nav {
     display: flex !important;
     align-items: center;
-  
+    margin-left: 5px;
   }
-
-nav ul{
+  
+  nav ul{
     display: none;
   } 
-
-
-
+  
+  
+  
   .menu-toggle{
     display: flex;
     cursor:pointer;
   font-size: 20px;
-
-
+  
+  
   }
-
+  
     nav ul.show {
         display: flex;
         flex-direction: column;
         background-color: var(--third-color);
         border-radius: 5px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        gap:10px
     }
+
+    nav ul li a:hover {
+      background-color: none;
+      color: none;
+  }
       
       }
 
