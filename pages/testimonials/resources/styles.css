@@ -46,6 +46,10 @@ body{
   
 }
 
+#abilio{
+  transform: scale(0.6);
+}
+
 .card {
 background-color: #fff;
 border: 1px solid #ddd;
@@ -68,21 +72,6 @@ padding: 0 20px;
 margin: 15px 20px 20px;
 }
 
-.card-button {
-margin-top: auto; /* Empurra o botão para o final do contêiner */
-padding: 0 20px 20px;
-}
-.contact-btn {
-display: inline-block; /* Muda para block para ocupar toda a largura */
-padding: 10px 20px;
-background-color: #385170;
-color: white;
-text-decoration: none;
-border-radius: 8px;
-text-align: center;
-transition: background-color 0.3s ease;
-font-size: 16px;
-}
 
 .card h3 {
   font-size: 20px;
