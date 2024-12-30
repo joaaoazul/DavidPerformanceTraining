@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Performance Training</title>
-    <link rel="stylesheet" href="./resources/css/styles.css">
+    <link rel="stylesheet" href="./stylesGerais.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="./resources/img/icon.ico.ico" type="image/x-icon">
+    <link rel="icon" href="../../resources/img/icon.ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <main>
-
 <body>
     <header> <!--Cabeçalho comum a todas as páginas-->
         <div id="logoName">
-        <a href="index.html">
-            <img src="./resources/img/logo.png" alt="David Performance Training Logo">
-        </a>
-        <h1><a class="title" id="name" href="index.html">David Performance Training</a></h1>
-    </div>
-    <div class="menu-toggle">☰</div>
+        <a href="../../index.html">
+            <img src="../../resources/img/logo.png" alt="David Performance Training Logo">        </a>
+            <h1><a class="title" id="name" href="./index.html">David Performance Training</a></h1>
+        </div>
+        <div class="menu-toggle">☰</div>
         <nav>
             <ul> <!--Barra de navegação-->
-                <li><a href="./pages/about/index.html">Sobre Mim</a></li>
                 <li><a href="./pages/services/index.html">Serviços</a></li>
                 <li><a href="./pages/testimonials/index.html">Testemunhos</a></li>
                 <li><a href="./pages/contact/index.html">Contactos</a></li>
@@ -31,36 +29,69 @@
         </nav>
 
     </header>
-    <section class="begginJourney">
-        <button class="btn" id="journey" onclick="window.location.href='./pages/services/index.html'">A tua jornada começa aqui!</button>
-        
+<section id="aboutMe">
+    <div class="card-container">
+        <div class="card">
+            <img id="fotoDavid" src="../../resources/img/fotoDavid.jpg" alt="João Azul" class="card-image">
+            <h2>David Livramento Alexandre</h2>
+            <h3>Personal Trainer</h3>
+            <p>• Licenciado em Ciências do desporto. <br> • Mestrado em Ensino da Educação Física nos ensino básico e secundário.</p>
+            
+        </div>
+
+        <div class="card">
+            <video src="./resources/vid/videoApresentacao.MP4" controls>
+                Seu navegador não suporta vídeos.
+            </video>
+            <h2>Vídeo</h2>
+            <p>Assista ao meu vídeo de apresentação</p>
+        </div>
+
+        <div class="card">
+            <img class="card-logo" src="./resources/img/logoUL.jpg" alt="Logotipo">
+            <h2>Universidade</h2>
+            <p>Informações sobre a universidade.</p>
+          </div>
+          
+          <div class="card">
+            <img class="card-logo" src="./resources/img/logoFMH.jpg" alt="Logotipo">
+            <h2>Universidade</h2>
+            <p>Informações sobre a universidade.</p>
+          </div>
+
+          <div class="card">
+            <h2>Currículo</h2>
+            <button class="cv-button" onclick="window.open('path/to/cv.pdf')">Download CV</button>
+          </div>
+        </div>
     </section>
 
 
 </body>
-</main>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 David Performance Training. Todos os direitos reservados.</p>
-        </div>
-    </footer>
 
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const dropdownMenu = document.querySelector('nav ul');
-        
-        // Abrir/Fechar menu ao clicar no botão
-        menuToggle.addEventListener('click', function (e) {
-          e.stopPropagation(); // Impede que o clique no botão feche o menu
-          dropdownMenu.classList.toggle('show');
-        });
-        
-        // Fechar menu ao clicar fora
-        document.addEventListener('click', function (e) {
-          if (!dropdownMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-            dropdownMenu.classList.remove('show'); // Esconde o menu
-          }
-        });
-        
-          </script>
+</main>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 David Performance Training. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const dropdownMenu = document.querySelector('nav ul');
+    
+    // Abrir/Fechar menu ao clicar no botão
+    menuToggle.addEventListener('click', function (e) {
+      e.stopPropagation(); // Impede que o clique no botão feche o menu
+      dropdownMenu.classList.toggle('show');
+    });
+    
+    // Fechar menu ao clicar fora
+    document.addEventListener('click', function (e) {
+      if (!dropdownMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        dropdownMenu.classList.remove('show'); // Esconde o menu
+      }
+    });
+    
+      </script>
 </html>
