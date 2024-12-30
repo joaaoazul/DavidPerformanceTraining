@@ -16,6 +16,29 @@ body{
   background-color: (--first-color) !important;
 }
 
+/* Contêiner principal */
+.main-container {
+  display: flex; /* Organiza as colunas horizontalmente */
+  justify-content: center; /* Centraliza as colunas */
+  align-items: flex-start; /* Alinha os itens no topo */
+  gap: 40px; /* Espaçamento entre as colunas */
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza no centro da tela */
+}
+
+/* Colunas */
+.column {
+  display: flex;
+  flex-direction: column; /* Organiza os itens verticalmente */
+  gap: 20px; /* Espaçamento entre os itens na coluna */
+}
+
+.card, .card-video, .card-cv {
+  width: 100%; /* Garante que os cartões ocupem a largura da coluna */
+   /* Define o tamanho máximo para os cartões */
+}
+
+
 #aboutMe {
   text-align: center;
   padding: 50px 20px;
@@ -37,6 +60,8 @@ body{
   flex-wrap: wrap; /* Permite que os cartões se ajustem em telas menores */
   justify-content: center;
   gap: 20px; /* Espaçamento entre os cartões */
+  flex-direction: row;
+  align-items: center;
 }
 .card-image {
   width: 100%;
@@ -44,7 +69,6 @@ body{
   object-fit: cover;
   border-radius: 8px 8px 0 0;
   margin-bottom: 0px;
-
 }
 
 
@@ -63,6 +87,13 @@ body{
   flex-direction: column;
   justify-content: flex-start;
   }
+
+  .card, .card-video, .card-cv {
+    padding: 15px; /* Adiciona um padding interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Mantém o estilo */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #fff;
+}
   
   .card h2,
   .card h3 {
@@ -95,9 +126,38 @@ body{
 margin-top: 19px !important; }
 
 .card-video {
-  width: 60%;
+  margin-top: 17px;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: 320px; 
+  padding: 0 0 20px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
+.card-video h2{
+  font-size: 25px !important;
+  margin: 0;
+  padding: 10px 20px 0;
+  margin-bottom: -0.8px !important;
+}
+
+.card-video p {
+  font-size: 16px;
+    color: #555;
+    padding: 0 20px 20px;
+    flex-grow: 1;
+    margin: 0px;
+  text-align: left;
+margin-top: 19px !important;
+}
+
 
 .card-logo {
   max-width: 80%;
@@ -110,6 +170,28 @@ margin-top: 19px !important; }
   object-fit: cover;
 }
 
+.card-cv{
+  margin-top: 17px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: 200px; 
+  padding: 0 0 20px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-cv h2{
+  font-size: 25px !important;
+  margin: 0;
+  padding: 10px 20px 0;
+  margin-bottom: -0.8px !important;
+}
+
 .cv-button {
   background-color: #385170;
   color: white;
@@ -119,6 +201,7 @@ margin-top: 19px !important; }
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
+
 }
 
 .cv-button:hover {
@@ -152,6 +235,11 @@ margin-top: 19px !important; }
       nav {
         display: none; /* Esconde a barra de navegação por padrão */
       }
+
+      .main-container {
+        flex-direction: column; /* Alinha as colunas verticalmente */
+        align-items: center;
+    }
 
   }
   

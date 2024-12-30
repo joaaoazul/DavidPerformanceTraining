@@ -29,42 +29,49 @@
         </nav>
 
     </header>
-<section id="aboutMe">
-    <div class="card-container">
-        <div class="card">
-            <img id="fotoDavid" src="../../resources/img/fotoDavid.jpg" alt="João Azul" class="card-image">
-            <h2>David Livramento Alexandre</h2>
-            <h3>Personal Trainer</h3>
-            <p>• Licenciado em Ciências do desporto. <br> • Mestrado em Ensino da Educação Física nos ensino básico e secundário.</p>
-            
-        </div>
-
-        <div class="card">
-            <video src="./resources/vid/videoApresentacao.MP4" controls>
-                Seu navegador não suporta vídeos.
-            </video>
-            <h2>Vídeo</h2>
-            <p>Assista ao meu vídeo de apresentação</p>
-        </div>
-
-        <div class="card">
-            <img class="card-logo" src="./resources/img/logoUL.PNG" alt="Logotipo">
-            <h2>Universidade</h2>
-            <p>Informações sobre a universidade.</p>
-          </div>
-          
-          <div class="card">
-            <img class="card-logo" src="./resources/img/logoFMH.jpg" alt="Logotipo">
-            <h2>Universidade</h2>
-            <p>Informações sobre a universidade.</p>
-          </div>
-
-          <div class="card">
-            <h2>Currículo</h2>
-            <button class="cv-button" onclick="window.open('path/to/cv.pdf')">Download CV</button>
-          </div>
+    <section id="aboutMe">
+        <div class="main-container">
+            <!-- Coluna 1: Card Image -->
+            <div class="column">
+                <div class="card">
+                    <img id="fotoDavid" src="../../resources/img/fotoDavid.jpg" alt="João Azul" class="card-image">
+                    <h2>David Livramento Alexandre</h2>
+                    <h3>Personal Trainer</h3>
+                    <p>• Licenciado em Ciências do desporto. <br> • Mestrado em Ensino da Educação Física nos ensino básico e secundário.</p>
+                </div>
+            </div>
+    
+            <!-- Coluna 2: Card Video e Card CV -->
+            <div class="column">
+                <div class="card-video">
+                    <video src="./resources/vid/videoApresentacao.MP4" controls>
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <h2>Vídeo</h2>
+                    <p>Assista ao meu vídeo de apresentação.</p>
+                </div>
+                <div class="card-cv">
+                    <h2>Currículo</h2>
+                    <button class="cv-button" onclick="window.open('path/to/cv.pdf')">Download CV</button>
+                </div>
+            </div>
+    
+            <!-- Coluna 3: Card Logos -->
+            <div class="column">
+                <div class="card">
+                    <img class="card-logo" src="./resources/img/logoUL.PNG" alt="Logotipo">
+                    <h2>Universidade</h2>
+                    <p>Informações sobre a universidade.</p>
+                </div>
+                <div class="card">
+                    <img class="card-logo" src="./resources/img/logoFMH.jpg" alt="Logotipo">
+                    <h2>Universidade</h2>
+                    <p>Informações sobre a universidade.</p>
+                </div>
+            </div>
         </div>
     </section>
+    
 
 
 </body>
