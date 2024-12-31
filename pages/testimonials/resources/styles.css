@@ -28,9 +28,9 @@ body{
 /* Contêiner dos cartões */
 .card-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que os cartões se ajustem em telas menores */
+  flex-wrap: wrap; 
   justify-content: center;
-  gap: 20px; /* Espaçamento entre os cartões */
+  gap: 20px; 
 }
 .card-image {
   width: 100%;
@@ -89,7 +89,7 @@ margin: 15px 20px 20px;
   flex-grow: 1;
 text-align: left; }
 
-/* Efeito ao passar o mouse */
+/* Efeito ao passar o rato */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);

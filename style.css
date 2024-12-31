@@ -38,16 +38,16 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Espaçamento entre cartões */
-    max-width: 300px; /* Largura máxima dos cartões */
-    width: 100%; /* Ajusta a largura para 100% do contêiner */
-    height: auto; /* Ajusta a altura automaticamente */
+    margin-bottom: 20px; 
+    max-width: 300px; 
+    width: 100%; 
+    height: auto; 
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 15px; /* Adiciona preenchimento interno aos cartões */
+    padding: 15px; 
 }
 
 /* Estilo para o cartão de imagem */
@@ -80,19 +80,19 @@ border-radius: 8px;
 }
 
 .card-cv{
-    margin-top: 110px; /* Mantém o mesmo espaçamento superior */
+    margin-top: 110px; 
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px; /* Largura máxima do cartão */
-    width: 100%; /* Ajusta a largura para 100% do contêiner */
-    height: auto; /* Ajusta a altura automaticamente */
+    max-width: 300px;
+    width: 100%; 
+    height: auto; 
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 15px; /* Preenchimento interno */
+    padding: 15px; 
     margin-bottom: 10px;
 }
 
@@ -103,9 +103,9 @@ border-radius: 8px;
     border-radius: 8px;
     
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 350px; /* Largura máxima dos cartões */
-    width: 100%; /* Ajusta a largura para 100% do contêiner */
-    height: auto; /* Ajusta a altura automaticamente */
+    max-width: 350px; 
+    width: 100%; 
+    height: auto; 
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
@@ -120,8 +120,8 @@ border-radius: 8px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2px; /* Espaçamento entre cartões */
-    max-width: 70px !important; /* Reduzido para 80px */
+    margin-bottom: 2px; 
+    max-width: 70px !important; 
     width: 100%; /* Ajusta a largura para 100% do contêiner */
     height: auto; /* Ajusta a altura automaticamente */
     text-align: center;
@@ -130,7 +130,7 @@ border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza o conteúdo verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; 
 }
 
 .card-logo1 img,
@@ -149,19 +149,19 @@ border-radius: 8px;
 }
 
 .cv-button{
-    font-size: 1rem; /* Tamanho da fonte do botão */
-    padding: 10px 20px; /* Preenchimento do botão */
-    background-color: var(--second-color); /* Cor de fundo do botão */
-    color: var(--fourth-color); /* Cor do texto do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Arredonda os cantos do botão */
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    font-size: 1rem; 
+    padding: 10px 20px; 
+    background-color: var(--second-color); 
+    color: var(--fourth-color); 
+    border: none;
+    border-radius: 5px; 
+    cursor:grab; /* Muda o cursor ao passar sobre o botão */
     transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .cv-button:hover {
-    background-color: var(--third-color); /* Cor de fundo ao passar o mouse */
-    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    background-color: var(--third-color); /* Cor de fundo ao passar o rato */
+    transform: scale(1.05); /* Leve aumento ao passar o rato */
 }
 
 .card-logo1,
@@ -170,9 +170,9 @@ border-radius: 8px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Espaçamento entre cartões */
-    max-width: 150px; /* Largura máxima dos cartões de logotipo */
-    width: 100%; /* Ajusta a largura para 100% do contêiner */
+    margin-bottom: 20px; 
+    max-width: 150px; 
+    width: 100%; 
     height: auto; /* Ajusta a altura automaticamente */
     text-align: center;
     padding: 10px;
@@ -181,7 +181,7 @@ border-radius: 8px;
 
 .card-logo1 img,
 .card-logo2 img {
-    max-width: 80%; /* Ajusta a largura da imagem para 80% do contêiner */
+    max-width: 80%; 
     height: auto; /* Mantém a proporção da imagem */
     margin: 0 auto; /* Centraliza a imagem */
 }
@@ -196,6 +196,9 @@ p {
     font-size: 1em;
     color: #666;
 }
+
+
+
 /* Estilos para tablets */
 @media (max-width: 768px) {
     header, nav, .contact-form {
@@ -209,7 +212,7 @@ p {
     }
 
     .menu-toggle {
-        display: block; /* Mostra o menu toggle em telas menores */
+        display: block; /* Mostra o menu toggle em ecrãs menores */
     }
 
     nav {
@@ -232,7 +235,7 @@ p {
     header {
         display: flex !important;
         align-items: center !important;
-        justify-content: space-between; /* Espaça os elementos */
+        justify-content: space-between; 
         padding: 10px 15px;
         box-sizing: border-box;
     }
