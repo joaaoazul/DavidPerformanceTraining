@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="../../resources/img/icon.ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./resources/img/icon.ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <main>
 <body>
     <header> <!--Cabeçalho comum a todas as páginas-->
         <div id="logoName">
-        <a href="../../index.html">
-            <img src="../../resources/img/logo.png" alt="David Performance Training Logo">        </a>
+        <a href="./Index.html">
+            <img src="./resources/img/logo.png" alt="David Performance Training Logo">        </a>
             <h1><a class="title" id="name" href="./index.html">David Performance Training</a></h1>
         </div>
         <div class="menu-toggle">☰</div>
@@ -33,8 +33,8 @@
         <div class="main-container">
             <!-- Coluna 1: Card Image -->
             <div class="column">
-                <div class="card">
-                    <img id="fotoDavid" src="../../resources/img/fotoDavid.jpg" alt="João Azul" class="card-image">
+                <div class="card-image">
+                    <img id="fotoDavid" src="../../resources/img/fotoDavid.jpg" alt="David Livramento" class="card-image">
                     <h2>David Livramento Alexandre</h2>
                     <h3>Personal Trainer</h3>
                     <p>• Licenciado em Ciências do desporto. <br> • Mestrado em Ensino da Educação Física nos ensino básico e secundário.</p>
@@ -42,7 +42,7 @@
             </div>
     
             <!-- Coluna 2: Card Video e Card CV -->
-            <div class="column">
+            <div class="column vertical">
                 <div class="card-video">
                     <video src="./resources/vid/videoApresentacao.MP4" controls>
                         Seu navegador não suporta vídeos.
@@ -52,21 +52,21 @@
                 </div>
                 <div class="card-cv">
                     <h2>Currículo</h2>
-                    <button class="cv-button" onclick="window.open('path/to/cv.pdf')">Download CV</button>
+                    <button class="cv-button" onclick="window.open('./resources/cvDavid.pdf')">Download CV</button>
                 </div>
             </div>
     
             <!-- Coluna 3: Card Logos -->
-            <div class="column">
+            <div class="column vertical">
                 <div class="card">
-                    <img class="card-logo" src="./resources/img/logoUL.PNG" alt="Logotipo">
-                    <h2>Universidade</h2>
-                    <p>Informações sobre a universidade.</p>
+                    <img class="card-logo1" src="./resources/img/logoUL.PNG" alt="Logotipo">
+                    <h2>Universidade de Lisboa</h2>
+                    <p></p>
                 </div>
                 <div class="card">
-                    <img class="card-logo" src="./resources/img/logoFMH.jpg" alt="Logotipo">
-                    <h2>Universidade</h2>
-                    <p>Informações sobre a universidade.</p>
+                    <img class="card-logo2" src="./resources/img/logoFMH.jpg" alt="Logotipo">
+                    <h2>Faculdade de Motricidade Humana</h2>
+                    <p></p>
                 </div>
             </div>
         </div>

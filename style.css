@@ -1,0 +1,276 @@
+:root {
+    --first-color: #ececec;
+    --second-color: #9fd3c7;
+    --third-color: #385170;
+    --fourth-color: #142d4c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Espaça as colunas */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.card-image,
+.card-video,
+.card-cv,
+.card-logo1,
+.card-logo2,
+.card {
+    margin-top: 110px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espaçamento entre cartões */
+    max-width: 300px; /* Largura máxima dos cartões */
+    width: 100%; /* Ajusta a largura para 100% do contêiner */
+    height: auto; /* Ajusta a altura automaticamente */
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px; /* Adiciona preenchimento interno aos cartões */
+}
+
+/* Estilo para o cartão de imagem */
+.card-image {
+    margin-top: 110px;
+    background-color: #fff;
+border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 350px; 
+    width: 100%; 
+    height: 528px; 
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 13px;
+    overflow: hidden; }
+
+
+/* Estilo para a imagem dentro do cartão */
+.card-image img {
+    height: 100%;
+    width: 100%;
+    margin: 0; 
+    object-fit: cover; 
+    box-shadow: none !important;
+    border-radius: 8px !important;
+}
+
+.card-cv{
+    margin-top: 110px; /* Mantém o mesmo espaçamento superior */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Largura máxima do cartão */
+    width: 100%; /* Ajusta a largura para 100% do contêiner */
+    height: auto; /* Ajusta a altura automaticamente */
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px; /* Preenchimento interno */
+    margin-bottom: 10px;
+}
+
+.card-video{
+    margin-top: 110px;
+    margin-bottom: 2px;
+    background-color: #fff;
+    border-radius: 8px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px; /* Largura máxima dos cartões */
+    width: 100%; /* Ajusta a largura para 100% do contêiner */
+    height: auto; /* Ajusta a altura automaticamente */
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   margin-left: 0;
+    padding: 15px; /* Adiciona preenchimento interno aos cartões */
+}
+
+.card-logo1,
+.card-logo2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2px; /* Espaçamento entre cartões */
+    max-width: 70px !important; /* Reduzido para 80px */
+    width: 100%; /* Ajusta a largura para 100% do contêiner */
+    height: auto; /* Ajusta a altura automaticamente */
+    text-align: center;
+    padding: 5px; /* Reduzido o padding */
+    margin: 0 2px; /* Margem entre os cartões */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.card-logo1 img,
+.card-logo2 img {
+    max-width: 90%; /* Reduzido para 70% */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorção */
+}
+
+
+.card-video video {
+    max-width: 100%; /* Garante que o vídeo não ultrapasse o cartão */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cv-button{
+    font-size: 1rem; /* Tamanho da fonte do botão */
+    padding: 10px 20px; /* Preenchimento do botão */
+    background-color: var(--second-color); /* Cor de fundo do botão */
+    color: var(--fourth-color); /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.cv-button:hover {
+    background-color: var(--third-color); /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.card-logo1,
+
+.card-logo2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espaçamento entre cartões */
+    max-width: 150px; /* Largura máxima dos cartões de logotipo */
+    width: 100%; /* Ajusta a largura para 100% do contêiner */
+    height: auto; /* Ajusta a altura automaticamente */
+    text-align: center;
+    padding: 10px;
+}
+
+
+.card-logo1 img,
+.card-logo2 img {
+    max-width: 80%; /* Ajusta a largura da imagem para 80% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: #666;
+}
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    header, nav, .contact-form {
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o menu toggle em telas menores */
+    }
+
+    nav {
+        display: none; /* Esconde a barra de navegação por padrão */
+    }
+
+    .main-container {
+        flex-direction: column; /* Alinha as colunas verticalmente */
+        align-items: center; /* Centraliza as colunas */
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 16px !important;
+        margin: 0;
+    }
+
+    header {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between; /* Espaça os elementos */
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+
+    #logoName {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px;
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+
+    #logoName img {
+        max-height: 30px; /* Reduz o tamanho do logo */
+        height: auto;
+        width: auto;
+    }
+
+    nav {
+        display: flex !important;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--third-color);
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}

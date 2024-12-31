@@ -21,16 +21,17 @@ body{
   display: flex; /* Organiza as colunas horizontalmente */
   justify-content: center; /* Centraliza as colunas */
   align-items: flex-start; /* Alinha os itens no topo */
-  gap: 40px; /* Espaçamento entre as colunas */
+  gap: 10px; /* Espaçamento entre as colunas */
   max-width: 1200px;
   margin: 0 auto; /* Centraliza no centro da tela */
+padding: 20px;
 }
 
 /* Colunas */
 .column {
   display: flex;
   flex-direction: column; /* Organiza os itens verticalmente */
-  gap: 20px; /* Espaçamento entre os itens na coluna */
+  gap: 10px; /* Espaçamento entre os itens na coluna */
 }
 
 .card, .card-video, .card-cv {
@@ -59,7 +60,7 @@ body{
   display: flex;
   flex-wrap: wrap; /* Permite que os cartões se ajustem em telas menores */
   justify-content: center;
-  gap: 20px; /* Espaçamento entre os cartões */
+  gap: 0px; /* Espaçamento entre os cartões */
   flex-direction: row;
   align-items: center;
 }
@@ -70,26 +71,25 @@ body{
   border-radius: 8px 8px 0 0;
   margin-bottom: 0px;
 }
-
-
-.card {
-  margin-top: 17px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 30%;
-  height: 520px; 
-  padding: 0 0 20px;
-  text-align: left;
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  }
+ 
+.card{
+margin-top: 17px;
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+width: 30%;
+height: 520px; 
+padding: 0 0 20px;
+text-align: left;
+transition: transform 0.3s, box-shadow 0.3s;
+display: flex;
+flex-direction: column;
+justify-content: flex-start; 
+}
 
   .card, .card-video, .card-cv {
-    padding: 15px; /* Adiciona um padding interno */
+  margin: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Mantém o estilo */
     border-radius: 8px; /* Bordas arredondadas */
     background-color: #fff;
@@ -139,6 +139,7 @@ margin-top: 19px !important; }
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 0;
 }
 
 .card-video h2{
@@ -158,6 +159,10 @@ margin-top: 19px !important; }
 margin-top: 19px !important;
 }
 
+.card-video:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
 
 .card-logo {
   max-width: 80%;
@@ -190,6 +195,11 @@ margin-top: 19px !important;
   margin: 0;
   padding: 10px 20px 0;
   margin-bottom: -0.8px !important;
+}
+
+.card-cv:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .cv-button {
