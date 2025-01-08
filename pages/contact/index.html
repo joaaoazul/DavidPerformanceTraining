@@ -10,6 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="../../resources/img/icon.ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="./resources/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
 </head>
 
 <body>
@@ -34,7 +42,7 @@
         <section class="contact-container">
     <div class="contact-form">
         <h2>Entre em contacto comigo!</h2>
-        <form action="" onsubmit="alert('Formulário enviado!'); return false;">
+        <form action="" onsubmit="alert('Formulário enviado!'); return false;" method="POST" data-netlify="true">
             <label for="name">Nome</label>
             <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
 
